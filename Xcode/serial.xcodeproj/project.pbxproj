@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B76CDC8121FA794700B5DF3C /* serial.cc in Sources */ = {isa = PBXBuildFile; fileRef = B76CDC7E21FA794700B5DF3C /* serial.cc */; };
+		B76CDC8221FA794700B5DF3C /* unix.cc in Sources */ = {isa = PBXBuildFile; fileRef = B76CDC7F21FA794700B5DF3C /* unix.cc */; };
+		B76CDC8321FA794700B5DF3C /* list_ports_osx.cc in Sources */ = {isa = PBXBuildFile; fileRef = B76CDC8021FA794700B5DF3C /* list_ports_osx.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B491B08025F74C7B8A76B0E5 /* libserial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libserial.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76CDC7C21FA792B00B5DF3C /* v8stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v8stdint.h; path = ../include/serial/v8stdint.h; sourceTree = "<group>"; };
+		B76CDC7D21FA792B00B5DF3C /* serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = serial.h; path = ../include/serial/serial.h; sourceTree = "<group>"; };
+		B76CDC7E21FA794700B5DF3C /* serial.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serial.cc; path = ../src/serial.cc; sourceTree = "<group>"; };
+		B76CDC7F21FA794700B5DF3C /* unix.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unix.cc; path = ../src/impl/unix.cc; sourceTree = "<group>"; };
+		B76CDC8021FA794700B5DF3C /* list_ports_osx.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = list_ports_osx.cc; path = ../src/impl/list_ports/list_ports_osx.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CBBD28111A641BDAF6E4CF7 = {
+			isa = PBXGroup;
+			children = (
+				53B680C38D7F4809A236015A /* serial */,
+				77700D11C85D40CDBBED9346 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53B680C38D7F4809A236015A /* serial */ = {
+			isa = PBXGroup;
+			children = (
+				F549B991756841B3BAF56BB9 /* Source Files */,
+				72CDE864D68B4EDBBCC4CD56 /* Header Files */,
+			);
+			name = serial;
+			sourceTree = "<group>";
+		};
+		72CDE864D68B4EDBBCC4CD56 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B76CDC7D21FA792B00B5DF3C /* serial.h */,
+				B76CDC7C21FA792B00B5DF3C /* v8stdint.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		77700D11C85D40CDBBED9346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B491B08025F74C7B8A76B0E5 /* libserial.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F549B991756841B3BAF56BB9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B76CDC8021FA794700B5DF3C /* list_ports_osx.cc */,
+				B76CDC7E21FA794700B5DF3C /* serial.cc */,
+				B76CDC7F21FA794700B5DF3C /* unix.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		792F9A5852674FA1997C6257 /* serial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536602B6408D4C90AEC9C8DA /* Build configuration list for PBXNativeTarget "serial" */;
+			buildPhases = (
+				33C0840BE3E744A5B3F96775 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = serial;
+			productName = serial;
+			productReference = B491B08025F74C7B8A76B0E5 /* libserial.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EF5D02A6A7549BCBE503D2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 330BE2C6A4124B4F90F5F490 /* Build configuration list for PBXProject "serial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0CBBD28111A641BDAF6E4CF7;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				792F9A5852674FA1997C6257 /* serial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33C0840BE3E744A5B3F96775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76CDC8121FA794700B5DF3C /* serial.cc in Sources */,
+				B76CDC8321FA794700B5DF3C /* list_ports_osx.cc in Sources */,
+				B76CDC8221FA794700B5DF3C /* unix.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A7D15C5A3524983A74A5BD4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3896741606F5425D991F147B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/build;
+			};
+			name = MinSizeRel;
+		};
+		57BEEAA076FD4E6398E78679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		61CDAD6C502F476C9156B7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/build;
+			};
+			name = Release;
+		};
+		64B46E7996BF474DAFDE6216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		6DB7D7BD4224480CA15BB1EB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/build;
+			};
+			name = RelWithDebInfo;
+		};
+		934B34A96F3C48B79DB28702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/build;
+			};
+			name = Debug;
+		};
+		E9D9AD34DAA74D07A259C32D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial/include;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = serial;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Dropbox/Projects/Robot/thirdParty/serial;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		330BE2C6A4124B4F90F5F490 /* Build configuration list for PBXProject "serial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934B34A96F3C48B79DB28702 /* Debug */,
+				61CDAD6C502F476C9156B7B7 /* Release */,
+				3896741606F5425D991F147B /* MinSizeRel */,
+				6DB7D7BD4224480CA15BB1EB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		536602B6408D4C90AEC9C8DA /* Build configuration list for PBXNativeTarget "serial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B46E7996BF474DAFDE6216 /* Debug */,
+				57BEEAA076FD4E6398E78679 /* Release */,
+				0A7D15C5A3524983A74A5BD4 /* MinSizeRel */,
+				E9D9AD34DAA74D07A259C32D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EF5D02A6A7549BCBE503D2E /* Project object */;
+}
